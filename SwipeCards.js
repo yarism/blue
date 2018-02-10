@@ -103,7 +103,7 @@ export default class extends React.Component {
         <View>
             <Modal isVisible={this.state.isModalVisible}>
                 <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                    <View style={[styles.card, { borderTopColor: '#dc4d4d', borderTopWidth: 10 }]}>
+                    <View style={[styles.card, { borderTopColor: '#dc4d4d', borderTopWidth: 10, height: 320 }]}>
                         <Text style={{ fontSize: 22, marginBottom: 10, marginTop: 10 }}>Incorrect</Text>
                         <Text style={{ fontSize: 18, marginBottom: 20 }}>{this.state.explaination}</Text>
                         <TouchableOpacity onPress={this._toggleModal.bind(this)} style={styles.button}>
